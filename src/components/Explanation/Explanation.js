@@ -1,17 +1,14 @@
-// import React from 'react';
-// import './explanation.css';
+import React, { useState } from 'react';
 
-// const Explanation = props => {
-//     const { explanation } = props;
+const Explanation = (props) => {
+  const { explanation } = props
 
-//     return (
-//         <div className="explanation">
-//             <p>
-//                 {explanation.explanation}
-//             </p>
-//         </div>
-//     );
-// };
+    return (
+        <div className="explanation">
+            <p>{explanation}</p>
+        </div>
+    );
+};
 
 
-// export default Explanation;
+export default Explanation;
