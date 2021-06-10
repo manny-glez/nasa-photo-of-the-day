@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios'
+import axios from 'axios';
+import styled from 'styled-components';
+
+const StyledImage = styled.div`
+  font-size: 25px;
+  margin: auto;
+  margin-top: 100px;
+`
 
 function Image() {
 
@@ -23,10 +30,10 @@ function Image() {
 
   return (
     <>
-    <div className="image">
+    <StyledImage>
       <h2>{title}</h2>
       <img src={image} alt="" />
-    </div>
+    </StyledImage>
     <div className="explained">
       <h3>About The Photo</h3>
       <p>{explanation}</p>
